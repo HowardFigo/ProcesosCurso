@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width, user-scalable=no" /><!-- "position: fixed" fix for Android 2.2+ -->
+	<link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+	
+	<script type="text/javascript" src="../redips-drag-min.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+	<div style="color:white;background-color:#1e73be;padding:10px;text-align:center;font-size:20px"> Rompecabezas de procesos </div>
+	<title>Rompecabezas de procesos</title>
+</head>
+<body>
+	<!-- tables inside this DIV could have draggable content -->
+	<div id="redips-drag">
+		<table id="table1">
+			<colgroup>
+				<col width="100" />
+				<col width="100" />
+				<col width="100" />
+				<col width="100" />
+				<col width="100" />
+			</colgroup>
+			<tr>
+				<td class="redips-mark">     </td>
+				<td class="redips-mark">Inicio</td>
+				<td class="redips-mark">Planificacion</td>
+				<td class="redips-mark">Ejecucion</td>
+				<td class="redips-mark">Control</td>
+				<td class="redips-mark">Cierre</td>
+			</tr>
+			<tr class="lgrey">
+				<td class="redips-mark dark">Integracion</td>
+				<td><div id="d1" class="redips-drag t1">Identificar a los interesados</div></td>
+				<td></td>
+				<td><div id="d2" class="redips-drag t1">Adquirir Recursos</div></td>
+				<td><div id="d3" class="redips-drag t1">Definir Actividades</div></td>
+				<td><div id="d20" class="redips-drag t1">Planificar Costos</div></td>
+			</tr>
+			<tr>
+				<td class="redips-mark dark">Alcance</td>
+				<td><div id="d4" class="redips-drag t1">Estimar Recursos</div></td>
+				<td><div id="d42" class="redips-drag t1">Monitorear Interesados</div></td>
+				<td><div id="d3" class="redips-drag t1">Monitorear Comunicaciones</div></td>
+				<td><div id="d44" class="redips-drag t1">Recopilar Requisitos</div></td>
+				<td><div id="d5" class="redips-drag t1">Planificar Alcance</div></td>
+			</tr>
+			<tr class="lgrey">
+				<td class="redips-mark dark">Cronograma</td>
+				<td><div id="d41" class="redips-drag t1">Efectuar Adquisiciones</div></td>
+				<td><div id="d6" class="redips-drag t1">Anal. Cuantitativo de Riesgos</div></td>
+				<td></td>
+				<td><div id="d39" class="redips-drag t1">Controlar Trabajo</div></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td class="redips-mark dark">Costo</td>
+				<td></td>
+				<td></td>
+				<td><div id="d7" class="redips-drag t1">Definir Alcance</div></td>
+				<td></td>
+				<td><div id="d40" class="redips-drag t1">Controlar Recursos</div></td>
+			</tr>
+			<tr class="lgrey">
+				<td class="redips-mark dark">Calidad</td>
+				<td><div id="d36" class="redips-drag t1"> Planificar Riesgos</div></td>
+				<td><div id="d37" class="redips-drag t1"> Controlar Cronograma</div></td>
+				<td></td>
+				<td><div id="d38" class="redips-drag t1"> Monitorear Riesgos</div></td>
+				<td><div id="d8" class="redips-drag t1">Gestionar Calidad</div></td>
+				<!-- <td><div id="d8" class="redips-drag t1"><img id="smile_img" src="/wp-includes/images/smilies/icon_smile.gif"/></div></td> -->
+			</tr>
+			<tr class="lgrey">
+				<td class="redips-mark dark">Recursos</td>
+				<td></td>
+				<td><div id="d34" class="redips-drag t1"> Dirigir Proyecto</div></td>
+				<td><div id="d45" class="redips-drag t1"> Planificar Respuesta Riesgos</div></td>
+
+				<td><div id="d35" class="redips-drag t1"> Estimar Costos</div></td>
+				<td><div id="d8" class="redips-drag t1">Planificar Calidad</div></td>
+				<!-- <td><div id="d8" class="redips-drag t1"><img id="smile_img" src="/wp-includes/images/smilies/icon_smile.gif"/></div></td> -->
+			</tr>
+			<tr class="lgrey">
+				<td class="redips-mark dark">Comunicacion</td>
+				<td><div id="d33" class="redips-drag t1"> Validar Alcance</div></td>
+				<td></td>
+				<td><div id="d32" class="redips-drag t1"> Crear EDT</div></td>
+				<td></td>
+				<td><div id="d9" class="redips-drag t1"> Analisis Cualitativo de Riesgos</div></td>
+				<!-- <td><div id="d8" class="redips-drag t1"><img id="smile_img" src="/wp-includes/images/smilies/icon_smile.gif"/></div></td> -->
+			</tr>
+			<tr class="lgrey">
+				<td class="redips-mark dark">Riesgos</td>
+				<td></td>
+				<td><div id="d30" class="redips-drag t1">Dirigir Equipo </div></td>
+				<td><div id="d31" class="redips-drag t1">Controlar Costos </div></td>
+				<td></td>
+				<td><div id="d10" class="redips-drag t1">Gestionar Comunicaciones </div></td>
+				<!-- <td><div id="d8" class="redips-drag t1"><img id="smile_img" src="/wp-includes/images/smilies/icon_smile.gif"/></div></td> -->
+			</tr>
+			<tr class="lgrey">
+				<td class="redips-mark dark">Adquisiciones</td>
+				<td><div id="d28" class="redips-drag t3">Planificar Recursos</div></td>
+				<td><div id="d29" class="redips-drag t3">Controlar Cambios</div></td>
+				<td></td>
+				<td></td>
+				<td><div id="d11" class="redips-drag t1">Planificar Comunicaciones</div></td>
+				<!-- <td><div id="d8" class="redips-drag t1"><img id="smile_img" src="/wp-includes/images/smilies/icon_smile.gif"/></div></td> -->
+			</tr>
+			<tr class="lgrey">
+				<td class="redips-mark dark">Interesados</td>
+				<td><div id="d27" class="redips-drag t3">Identificar Riesgos</div></td>
+				<td><div id="d49" class="redips-drag t3">Implementar Respuesta Riesgos</div></td>
+				<td><div id="d28" class="redips-drag t3">Determinar presupuesto</div></</td>
+				<td></td>
+				<td><div id="d12" class="redips-drag t1">Desarrollar Cronograma</div></td>
+				<!-- <td><div id="d8" class="redips-drag t1"><img id="smile_img" src="/wp-includes/images/smilies/icon_smile.gif"/></div></td> -->
+			</tr>
+		</table>
+
+		<table id="table3">
+			<colgroup>
+				<col width="100" />
+				<col width="100" />
+				<col width="100" />
+				<col width="100" />
+				<col width="100" />
+			</colgroup>
+			<tr class="lgrey">
+				<td id="message" class="redips-mark" title="You can not drop here">Table3</td>
+				<!-- jump to smile image -->
+				<td><div id="d13" class="redips-drag t1">Gestionar Interesados</div></td>
+				<td><div id="d26" class="redips-drag t3">Controlar Calidad</div></td>
+				<td><div id="d16" class="redips-drag t3">Desarrollar el Acta de Consitucion de proyecto</div></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><div id="d25" class="redips-drag t3">Identificar interesados</div></td>
+				<td><div id="17" class="redips-drag t1">Planificar Cronograma</div></td>
+				<td><div id="d48" class="redips-drag t3">Estimar Duracion Actividades</div></td>
+				<td><div id="d25" class="redips-drag t3">Planificar interesados</div></td>
+			</tr>
+
+
+
+
+
+			<tr>
+				<td><div id="d18" class="redips-drag t1">Controlar Avance</div></td>
+				<td><div id="d24" class="redips-drag t3">Controlar Alcance</div></td>
+				<td><div id="d24" class="redips-drag t3">Desarrollar plan de proyecto</div></td>
+				<td><div id="d46" class="redips-drag t3">Secuenciar Actividades</div></td>
+
+				<td><div id="d19" class="redips-drag t1">Desarrollo Plan de Proyecto</div></td>
+			</tr>
+			<tr class="lgrey">
+				<td><div id="d20" class="redips-drag t3">Desarrollar Equipo</div></td>
+				<td><div id="d22" class="redips-drag t3">Gestionar Interesados</div></td>
+				<td><div id="d47" class="redips-drag t3">Planificar Adquisiciones</div></td>
+				<td><div id="d23" class="redips-drag t3">Planificar cronograma</div></td>
+				<td class="redips-trash" title="Trash">Trash</td>
+			</tr>
+		</table>
+	</div>
+	<footer style="color:white;background-color:#1e73be;padding:10px;text-align:center;font-size:15px">
+		<p>
+			Autor: Cliwfs Howard Figueroa Valeriano
+		</p>
+	</footer>
+</body>
+</html>
